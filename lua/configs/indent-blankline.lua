@@ -1,0 +1,32 @@
+return {
+  use_treesitter = true,
+  space_char_blankline = " ",
+  show_current_context_start = true,
+  char_highlight_list = {
+    "IndentBlanklineIndent1",
+    "IndentBlanklineIndent2",
+    "IndentBlanklineIndent3",
+    "IndentBlanklineIndent4",
+    "IndentBlanklineIndent5",
+    "IndentBlanklineIndent6",
+  },
+  show_current_context = true,
+  filetype_exclude = { "help", "dashboard", "dashpreview", "NvimTree", "vista", "sagahover" },
+  buftype_exclude = { "terminal", "nofile" },
+  context_patterns = {
+    "class",
+    "function",
+    "method",
+    "block",
+    "list_literal",
+    "selector",
+    "^if",
+    "^table",
+    "if_statement",
+    "while",
+    "for",
+    "loop",
+    "fn",
+    "func",
+  }
+}
